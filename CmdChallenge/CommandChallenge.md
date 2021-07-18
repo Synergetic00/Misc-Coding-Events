@@ -657,13 +657,13 @@ There are a mix of files in this directory that start with letters and numbers. 
 
 ### Solution
 
-- `ls -Rp` list directory contents (recursively and put '/' for a directory)
-- `grep ^[0-9]` find lines where the first character is a number
-- `grep -v /` inverted search, find all lines without  '/'
-
 ```
 ls -Rp | grep ^[0-9] | grep -v /
 ```
+
+- `ls -Rp` list directory contents (recursively and put '/' for a directory)
+- `grep ^[0-9]` find lines where the first character is a number
+- `grep -v /` inverted search, find all lines without  '/'
 
 ### Output
 
@@ -769,171 +769,273 @@ Note that order matters so don't sort the lines before removing duplicates.
 ### Solution
 
 ```
+awk '!seen[$0]++' faces.txt
 ```
+
+- `awk <command> <file>` pattern scanning and processing language
+- `$0` the whole line input of awk, the arguments are `$1, $2, ...`
+- `seen[$0]` arbritrary array of all of the faces with values initally of 0
+- `seen[$0]++` increment the value at the entry for the given key of the face
+- `!seen[$0]++` since they are either 0 or not, it's a boolean, so `!arr[key]` will only be true if it's the first because `0` is false and `!` inverts it to true, since otherwise it will increment and thus it will be false and not be output to the console
 
 ### Output
 
 ```
+(◕‿◕)
+(^̮^)
+ʘ‿ʘ
+ಠ_ಠ
+ಠ⌣ಠ
+ಠ‿ಠ
+(ʘ‿ʘ)
+(ಠ_ಠ)
+¯\_(ツ)_/¯
+(ಠ⌣ಠ
+ಠಠ⌣ಠ)
+(ಠ‿ಠ)
+٩◔̯◔۶
+ヽ༼ຈل͜ຈ༽ﾉ
+♥‿♥
+◔̯◔
+⊙﹏⊙
+(¬_¬)
+(；一_一)
+(͡° ͜ʖ ͡°)
+(° ͜ʖ °)
+¯\(°_o)/¯
+( ﾟヮﾟ)
+(︺︹︺)
 ```
 
-## ::
+## :bear: finding prime numbers
 
 ### Prompt
 
 ```
+The file random-numbers.txt contains a list of 100 random integers. Print the number of unique prime numbers contained in the file.
 ```
 
 ### Solution
 
 ```
+sort -u random-numbers.txt | factor | awk 'NF<3' | wc -l
 ```
 
 ### Output
 
 ```
+12
 ```
 
-## ::
+## :panda_face: printing common lines
 
 ### Prompt
 
 ```
+access.log.1 and access.log.2 are http server logs.
+
+Print the IP addresses common to both files, one per line.
 ```
 
 ### Solution
 
 ```
+awk '++seen[$1]==2{print $1}' access.log*
 ```
 
 ### Output
 
 ```
+17.137.186.194
+2.71.250.27
+28.151.137.59
+108.68.174.15
 ```
 
-## ::
+## :hatching_chick: printing lines before match
 
 ### Prompt
 
 ```
+Print all matching lines (without the filename or the file path) in all files under the current directory that start with "access.log", where the next line contains the string "404".
+
+Note that you will need to search recursively.
 ```
 
 ### Solution
 
 ```
+awk '/404/{print prev}{prev=$0}' **/access.log*
 ```
+
+If the line matches exactly 404, then print the value, after assign it, so that next time this command is run, prev holds the previous value.
 
 ### Output
 
 ```
+251.111.109.143 - - [09/Jan/2017:22:49:02 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 2477
+17.137.186.194 - - [09/Jan/2017:22:43:17 +0100] "GET /pages/create HTTP/1.0" 200 1116
+89.148.148.238 - - [09/Jan/2017:22:33:09 +0100] "GET /posts/1/display HTTP/1.0" 502 2477
+138.212.253.84 - - [09/Jan/2017:22:53:54 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471
 ```
 
-## ::
+## :peacock: files that are different
 
 ### Prompt
 
 ```
+Print all files with a .bin extension in the current directory that are different than the file named base.bin.
 ```
 
 ### Solution
 
 ```
+diff *.bin --to-file base.bin | cut -d ' ' -f 3
 ```
+
+- `diff *.bin --to-file base.bin` compare files with .bin extension to base.bin
+- `cut -d ' ' -f 3` get the third argument which is the file name
 
 ### Output
 
 ```
+test2.bin
+test4.bin
+test5.bin
+test7.bin
 ```
 
-## ::
+## :frog: tricky file
 
 ### Prompt
 
 ```
+There is a file: ./.../ /. .the flag.txt
+
+Show its contents on the screen.
 ```
 
 ### Solution
 
 ```
+cat "$(find |grep flag)"
 ```
 
 ### Output
 
 ```
+you got it!
 ```
 
-## ::
+## :dragon_face: find tabs in file
 
 ### Prompt
 
 ```
+How many lines contain tab characters in the file named file-with-tabs.txt in the current directory.
 ```
 
 ### Solution
 
 ```
+grep -c $'\t' file-with-tabs.txt
 ```
 
 ### Output
 
 ```
+3
 ```
 
-## ::
+## :hibiscus: Remove files without extension.
 
 ### Prompt
 
 ```
+There are files in this challenge with different file extensions.
+
+Remove all files without the .txt and .exe extensions recursively in the current working directory.
 ```
 
 ### Solution
 
 ```
+find ! -regex '.*\(txt\|exe\)$' -delete
 ```
 
 ### Output
 
 ```
+find: cannot delete './b': Directory not empty
+find: cannot delete './c/m': Directory not empty
+find: cannot delete './c': Directory not empty
 ```
 
-## ::
+## :: Remove files that start with a dash
 
 ### Prompt
 
 ```
+There are some files in this directory that start with a dash in the filename. Remove those files.
 ```
 
 ### Solution
 
 ```
+rm ./-*
 ```
 
-### Output
-
-```
-```
-
-## ::
+## :tulip: Print the contents sorted by PID
 
 ### Prompt
 
 ```
+There are two files in this directory, ps-ef1 and ps-ef2. Print the contents of both files sorted by PID and delete repeated lines.
 ```
 
 ### Solution
 
 ```
+sort -unk2 ps-ef*
 ```
+
+- `-u` only output the unique values
+- `-n` sort based on the numerical value of the key
+- `-k 2` set the sorting key to be the value in the second column
 
 ### Output
 
 ```
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 mar04 ?        00:00:13 /sbin/init
+root         2     0  0 mar04 ?        00:00:00 [kthreadd]
+root         3     2  0 mar04 ?        00:01:07 [ksoftirqd/0]
+user         5     2  0 mar04 ?        00:00:00 [kworker/0:0H]
+user         7     2  0 mar04 ?        00:07:06 [rcu_sched]
+user         8     2  0 mar04 ?        00:00:00 [rcu_bh]
+root         9     2  0 mar04 ?        00:00:00 [migration/0]
+root        10     2  0 mar04 ?        00:00:04 [watchdog/0]
+user        11     2  0 mar04 ?        00:00:04 [watchdog/1]
+root        12     2  0 mar04 ?        00:00:00 [migration/1]
+root        13     2  0 mar04 ?        00:00:59 [ksoftirqd/1]
+user        15     2  0 mar04 ?        00:00:00 [kworker/1:0H]
+user        16     2  0 mar04 ?        00:00:04 [watchdog/2]
+root        17     2  0 mar04 ?        00:00:00 [migration/2]
+root        18     2  0 mar04 ?        00:00:59 [ksoftirqd/2]
+root        20     2  0 mar04 ?        00:00:00 [kworker/2:0H]
+user        21     2  0 mar04 ?        00:00:04 [watchdog/3]
+root        22     2  0 mar04 ?        00:00:00 [migration/3]
+root        23     2  0 mar04 ?        00:01:29 [ksoftirqd/3]
 ```
 
-## ::
+## :sunflower: print the ports
 
 ### Prompt
 
 ```
+In the current directory there is a file called netstat.out.
+
+Print all the IPv4 listening ports sorted from the higher to lower.
 ```
 
 ### Solution
