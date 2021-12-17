@@ -1,0 +1,58 @@
+Last login: Sun Mar 14 00:02:38 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Evans-Air:~ evanjgillard$ ssh -p 3333 level6@bashzoo.neverlanctf.com
+###############################################################
+#                   Welcome to my game                        # 
+#         Check out https://neverlanctf.com for info          #
+#               Make sure you read the rules                  #
+#         https://neverlanctf.com/docs/code-of-conduct        #
+###############################################################
+level6@bashzoo.neverlanctf.com's password: 
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+
+                                                                       ╗     
+██████╗  █████╗ ███████╗██╗  ██╗███╗   ██╗██╗███╗   ██╗     ██╗ █████╗   ███████╗  
+██╔══██╗██╔══██╗██╔════╝██║  ██║████╗  ██║██║████╗  ██║     ██║██╔══██╗  ██╔════╝  
+██████╔╝███████║███████╗███████║██╔██╗ ██║██║██╔██╗ ██║     ██║███████║  ███████╗  
+██╔══██╗██╔══██║╚════██║██╔══██║██║╚██╗██║██║██║╚██╗██║██   ██║██╔══██║  ╚════██║  
+██████╔╝██║  ██║███████║██║  ██║██║ ╚████║██║██║ ╚████║╚█████╔╝██║  ██║  ███████║  
+╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚════╝ ╚═╝  ╚═╝  ╚══════╝  
+                                                                                   
+   ██████╗  █████╗ ███████╗██╗  ██╗     ██████╗  █████╗ ███╗   ███╗███████╗        
+   ██╔══██╗██╔══██╗██╔════╝██║  ██║    ██╔════╝ ██╔══██╗████╗ ████║██╔════╝        
+   ██████╔╝███████║███████╗███████║    ██║  ███╗███████║██╔████╔██║█████╗          
+   ██╔══██╗██╔══██║╚════██║██╔══██║    ██║   ██║██╔══██║██║╚██╔╝██║██╔══╝          
+   ██████╔╝██║  ██║███████║██║  ██║    ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗        
+   ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝        
+                                                                                   
+═════════════════════════════════════════════════════════════════════════════════
+       /$$$$$$$$ /$$   /$$ /$$$$$$$$       /$$$$$$$$  /$$$$$$   /$$$$$$ 
+      |__  $$__/| $$  | $$| $$_____/      |_____ $$  /$$__  $$ /$$__  $$
+         | $$   | $$  | $$| $$                 /$$/ | $$  \ $$| $$  \ $$
+         | $$   | $$$$$$$$| $$$$$             /$$/  | $$  | $$| $$  | $$
+         | $$   | $$__  $$| $$__/            /$$/   | $$  | $$| $$  | $$
+         | $$   | $$  | $$| $$              /$$/    | $$  | $$| $$  | $$
+         | $$   | $$  | $$| $$$$$$$$       /$$$$$$$$|  $$$$$$/|  $$$$$$/
+         |__/   |__/  |__/|________/      |________/ \______/  \______/ 
+
+Level: level6
+
+Instructions
+═════════════════════════════════════════════════════════════════════════════════
+Look in level7.txt. You'll have to figure out what to do with that on your own.
+level6@the-zoo:~$ file level7.txt 
+level7.txt: ASCII text, with very long lines
+level6@the-zoo:~$ ls
+level7.txt
+level6@the-zoo:~$ cat level7.txt 
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF9fXwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLC0tLS0nICAgYC0sCiAgICAgICAgICAgICAgICAgICAgIF9fXywtJ35+fmAtLS0nfn5+fmAtLS0tLScgLC0nICAgICAgICBcLAogICAgICAgICAgICAgX19fLC0tLScgICAgICAgICAgJyAgICAgICAgLC1+fn5+fiAgICAgICAgICAgIDoKICAgICAgICBfLC0tJyAgICAgICAgICAgICAgICAgLCAgICAgICAgOyA7ICAgICAgICkgIiAgIF9fICAgXCwKICAgXywtLScgICAgICwgICAgICAgICAgICAgICAgICwnICAgICAgOjogIiAgOyAgYCAsJyAgKFxvXCkgIHwKICAvIF8sICAgICAgIGAsICAgICAgICAgICAgICAgICAgICAgLCAgYDsgIiA7ICAgICggICAgIGB+fiBgJ1wKIDsgLyAgICAgICAgICxgICAgICAgICAgICAgICAgLCAgICAgYCAgICB+fn5gLiAiIDsgICBfICAgICAsICBgLgosJy8gICAgICAgICAgYCAsICAgICAgICAgICAgICBgICAgICBgICwgICwgICAgXF8vID8gICA7ICAgICkgICBgLgo6OzogICAgICAgICAgICBgICAgICAgICAgICAgICAgICAgICAgIGAgIGAgLCAgICAgdXVgLS0oX19fKCAgICB+Ogo6OjogICAgICAgICAgLCAsICAsICAgICAgICAgICAgLCAgIDsgICAgICwgYCAgLC0nICAgICAgXH4oICB+ICAgOgp8fDogICAgICAgICAgYCBgICBgICAgICAgICAgLCAgYCAsJyAgICAoIGAgXywtICAgICAgICAgIFwgXF8gICB+Ogo6fGAuICAgICAgICAsICwgICwgICAgICAgICAgYF8gICA7ICAgICAgICkgKTsgICAgICAgICAgICBcX18+ICAgOgp8OiAgOiA7ICAgICBgIGAgIGAgOyAgX18sLS1+fiBgLSggICAgICAgICAoIHwgICAgICAgICAgICAgIGAuICB+fAo6fCAgOiAgICAgICAgIGAgX18sLS0nICAgICAgICAgICA6ICAoKSAgICA6IDogICAgICAgICAgICAgICB8fiAgOwp8OyAgfCAgYCAgICAgLC0nICAgIDsgICAgICAgICAgICAgOiAgKSggICB8IGAuICAgICAgICAgLyggICBgLiB+fAo6OiAgOiAgIH4gIF8vOyAgICAgOyAgICAgICAgICAgICAgIHwgICApICA6ICA6ICAgICAgICA7IC8gICAgO34gOwp7fSAgOyAgICAgLyAgOiAgIH4gOiAgICAgICAgICAgICAgIDogICAgICA7ICw7ICAgICAgICA6IGAuXywtICAsCnt9IC9+ICAgIC8gICA7ICAgIDsgICAgICAgICAgICAgICAgIDogLCAgfCAgYDsgICAgICAgICBgLl9fXywtJwogIDt+ICAgIDsgICAgOyAgfiBgLiAgICAgICAgICAgICAgICB8IGAgICkgICA7CiAgOmAgICAgXCAgICBgO34gICBcICAgICAgICAgICAgICAgIDt+ICAgYC0sIGAtLgogIGAuX19PT087ICAgIGA7X09PTzsgICAgICAgICAgICAgICApX19fX19PTztfKE8pCiAgIH5+fn5+fiAgICAgICB+fn5+ICAgICAgICAgICAgICAgIH5+fn5+fn5+IH5+fn4KbGV2ZWw3OmVsZXBoYXRzLWxvdmUtdGlueS1taWNl
+level6@the-zoo:~$ strings level7.txt 
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF9fXwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLC0tLS0nICAgYC0sCiAgICAgICAgICAgICAgICAgICAgIF9fXywtJ35+fmAtLS0nfn5+fmAtLS0tLScgLC0nICAgICAgICBcLAogICAgICAgICAgICAgX19fLC0tLScgICAgICAgICAgJyAgICAgICAgLC1+fn5+fiAgICAgICAgICAgIDoKICAgICAgICBfLC0tJyAgICAgICAgICAgICAgICAgLCAgICAgICAgOyA7ICAgICAgICkgIiAgIF9fICAgXCwKICAgXywtLScgICAgICwgICAgICAgICAgICAgICAgICwnICAgICAgOjogIiAgOyAgYCAsJyAgKFxvXCkgIHwKICAvIF8sICAgICAgIGAsICAgICAgICAgICAgICAgICAgICAgLCAgYDsgIiA7ICAgICggICAgIGB+fiBgJ1wKIDsgLyAgICAgICAgICxgICAgICAgICAgICAgICAgLCAgICAgYCAgICB+fn5gLiAiIDsgICBfICAgICAsICBgLgosJy8gICAgICAgICAgYCAsICAgICAgICAgICAgICBgICAgICBgICwgICwgICAgXF8vID8gICA7ICAgICkgICBgLgo6OzogICAgICAgICAgICBgICAgICAgICAgICAgICAgICAgICAgIGAgIGAgLCAgICAgdXVgLS0oX19fKCAgICB+Ogo6OjogICAgICAgICAgLCAsICAsICAgICAgICAgICAgLCAgIDsgICAgICwgYCAgLC0nICAgICAgXH4oICB+ICAgOgp8fDogICAgICAgICAgYCBgICBgICAgICAgICAgLCAgYCAsJyAgICAoIGAgXywtICAgICAgICAgIFwgXF8gICB+Ogo6fGAuICAgICAgICAsICwgICwgICAgICAgICAgYF8gICA7ICAgICAgICkgKTsgICAgICAgICAgICBcX18+ICAgOgp8OiAgOiA7ICAgICBgIGAgIGAgOyAgX18sLS1+fiBgLSggICAgICAgICAoIHwgICAgICAgICAgICAgIGAuICB+fAo6fCAgOiAgICAgICAgIGAgX18sLS0nICAgICAgICAgICA6ICAoKSAgICA6IDogICAgICAgICAgICAgICB8fiAgOwp8OyAgfCAgYCAgICAgLC0nICAgIDsgICAgICAgICAgICAgOiAgKSggICB8IGAuICAgICAgICAgLyggICBgLiB+fAo6OiAgOiAgIH4gIF8vOyAgICAgOyAgICAgICAgICAgICAgIHwgICApICA6ICA6ICAgICAgICA7IC8gICAgO34gOwp7fSAgOyAgICAgLyAgOiAgIH4gOiAgICAgICAgICAgICAgIDogICAgICA7ICw7ICAgICAgICA6IGAuXywtICAsCnt9IC9+ICAgIC8gICA7ICAgIDsgICAgICAgICAgICAgICAgIDogLCAgfCAgYDsgICAgICAgICBgLl9fXywtJwogIDt+ICAgIDsgICAgOyAgfiBgLiAgICAgICAgICAgICAgICB8IGAgICkgICA7CiAgOmAgICAgXCAgICBgO34gICBcICAgICAgICAgICAgICAgIDt+ICAgYC0sIGAtLgogIGAuX19PT087ICAgIGA7X09PTzsgICAgICAgICAgICAgICApX19fX19PTztfKE8pCiAgIH5+fn5+fiAgICAgICB+fn5+ICAgICAgICAgICAgICAgIH5+fn5+fn5+IH5+fn4KbGV2ZWw3OmVsZXBoYXRzLWxvdmUtdGlueS1taWNl
+level6@the-zoo:~$ 

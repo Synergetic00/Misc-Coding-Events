@@ -1,0 +1,125 @@
+Last login: Sat Mar 13 23:41:30 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Evans-Air:~ evanjgillard$ ssh -p 3333 level4@bashzoo.neverlanctf.com
+###############################################################
+#                   Welcome to my game                        # 
+#         Check out https://neverlanctf.com for info          #
+#               Make sure you read the rules                  #
+#         https://neverlanctf.com/docs/code-of-conduct        #
+###############################################################
+level4@bashzoo.neverlanctf.com's password: 
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+
+                                                                       ╗     
+██████╗  █████╗ ███████╗██╗  ██╗███╗   ██╗██╗███╗   ██╗     ██╗ █████╗   ███████╗  
+██╔══██╗██╔══██╗██╔════╝██║  ██║████╗  ██║██║████╗  ██║     ██║██╔══██╗  ██╔════╝  
+██████╔╝███████║███████╗███████║██╔██╗ ██║██║██╔██╗ ██║     ██║███████║  ███████╗  
+██╔══██╗██╔══██║╚════██║██╔══██║██║╚██╗██║██║██║╚██╗██║██   ██║██╔══██║  ╚════██║  
+██████╔╝██║  ██║███████║██║  ██║██║ ╚████║██║██║ ╚████║╚█████╔╝██║  ██║  ███████║  
+╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚════╝ ╚═╝  ╚═╝  ╚══════╝  
+                                                                                   
+   ██████╗  █████╗ ███████╗██╗  ██╗     ██████╗  █████╗ ███╗   ███╗███████╗        
+   ██╔══██╗██╔══██╗██╔════╝██║  ██║    ██╔════╝ ██╔══██╗████╗ ████║██╔════╝        
+   ██████╔╝███████║███████╗███████║    ██║  ███╗███████║██╔████╔██║█████╗          
+   ██╔══██╗██╔══██║╚════██║██╔══██║    ██║   ██║██╔══██║██║╚██╔╝██║██╔══╝          
+   ██████╔╝██║  ██║███████║██║  ██║    ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗        
+   ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝        
+                                                                                   
+═════════════════════════════════════════════════════════════════════════════════
+       /$$$$$$$$ /$$   /$$ /$$$$$$$$       /$$$$$$$$  /$$$$$$   /$$$$$$ 
+      |__  $$__/| $$  | $$| $$_____/      |_____ $$  /$$__  $$ /$$__  $$
+         | $$   | $$  | $$| $$                 /$$/ | $$  \ $$| $$  \ $$
+         | $$   | $$$$$$$$| $$$$$             /$$/  | $$  | $$| $$  | $$
+         | $$   | $$__  $$| $$__/            /$$/   | $$  | $$| $$  | $$
+         | $$   | $$  | $$| $$              /$$/    | $$  | $$| $$  | $$
+         | $$   | $$  | $$| $$$$$$$$       /$$$$$$$$|  $$$$$$/|  $$$$$$/
+         |__/   |__/  |__/|________/      |________/ \______/  \______/ 
+
+Level: level4
+
+Instructions
+═════════════════════════════════════════════════════════════════════════════════
+Nice job on that last level. I'll have to step it up. Alright here is a file,
+but I won't tell you what it is. You'll have to figure that out on your own.
+
+
+level4@the-zoo:~$ ls
+crocodile
+level4@the-zoo:~$ file crocodile 
+crocodile: gzip compressed data, was "croc.txt", last modified: Fri Mar 12 10:32:07 2021, from Unix, original size modulo 2^32 1347
+level4@the-zoo:~$ gunzip crocodile 
+gzip: crocodile: unknown suffix -- ignored
+level4@the-zoo:~$ mv crocodile crocodile.gz
+level4@the-zoo:~$ gunzip crocodile 
+level4@the-zoo:~$ ls
+crocodile
+level4@the-zoo:~$ file cor
+cor: cannot open `cor' (No such file or directory)
+level4@the-zoo:~$ file crocodile 
+crocodile: ASCII text
+level4@the-zoo:~$ cat crocodile 
+                                             ___.-----.______
+                                   ___.-----'::::::::::::::::`---.___
+                _.--._            (:::;,-----'~~~~~`----::::::::::.. `-.
+   _          .'_---. `--.__       `~~'                 `~`--.:::::`..  `..
+  ; `-.____.-' ' {0} ` `--._`---.____                         `:::::::: : ::
+ :_^              ~   `--.___ `----.__`----.____                ~::::::.`;':
+  :`--.__,-----.___(         `---.___ `---.___  `----.___         ~|;:,' : |
+   `-.___,---.____     _,        ._  `----.____ `----.__ `-----.___;--'  ; :
+                  `---' `.  `._    `))  ,  , , `----.____.----.____   --' :|
+                        / `,--.\    `.` `  ` ` ,   ,  ,     _.--   `-----'|'
+ _.~~~~~~._____    __./'_/'     :   .:----.___ ` ` ` ``  .-'      , ,  :::'
+                 ///--\;  ____  :   :'    ____`---.___.--::     , ` ` ::'
+                 `'           _.'   (    /______     (   `-._   `-._,-'
+                           .-' __.-//     /_______---'       `-._   `.
+               ~~~        /////    `'       ~~~~~~      ~~ ______;   ::.
+                          `'`'                            /_______   _.'
+              ,     ~~~                  ~~~~~~~~           /___.---'  --__
+              `                                              ~~~
+level5:crocodile-dundee
+level4@the-zoo:~$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+Last login: Sat Mar 13 23:45:49 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Evans-Air:~ evanjgillard$ ssh -p 3333 level5@bashzoo.neverlanctf.com
+###############################################################
+#                   Welcome to my game                        # 
+#         Check out https://neverlanctf.com for info          #
+#               Make sure you read the rules                  #
+#         https://neverlanctf.com/docs/code-of-conduct        #
+###############################################################
+level5@bashzoo.neverlanctf.com's password: 
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+
+                                                                       ╗     
+██████╗  █████╗ ███████╗██╗  ██╗███╗   ██╗██╗███╗   ██╗     ██╗ █████╗   ███████╗  
+██╔══██╗██╔══██╗██╔════╝██║  ██║████╗  ██║██║████╗  ██║     ██║██╔══██╗  ██╔════╝  
+██████╔╝███████║███████╗███████║██╔██╗ ██║██║██╔██╗ ██║     ██║███████║  ███████╗  
+██╔══██╗██╔══██║╚════██║██╔══██║██║╚██╗██║██║██║╚██╗██║██   ██║██╔══██║  ╚════██║  
+██████╔╝██║  ██║███████║██║  ██║██║ ╚████║██║██║ ╚████║╚█████╔╝██║  ██║  ███████║  
+╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚════╝ ╚═╝  ╚═╝  ╚══════╝  
+                                                                                   
+   ██████╗  █████╗ ███████╗██╗  ██╗     ██████╗  █████╗ ███╗   ███╗███████╗        
+   ██╔══██╗██╔══██╗██╔════╝██║  ██║    ██╔════╝ ██╔══██╗████╗ ████║██╔════╝        
+   ██████╔╝███████║███████╗███████║    ██║  ███╗███████║██╔████╔██║█████╗          
+   ██╔══██╗██╔══██║╚════██║██╔══██║    ██║   ██║██╔══██║██║╚██╔╝██║██╔══╝          
+   ██████╔╝██║  ██║███████║██║  ██║    ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗        
+   ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝        
+                                                                                   
+═════════════════════════════════════════════════════════════════════════════════
+       /$$$$$$$$ /$$   /$$ /$$$$$$$$       /$$$$$$$$  /$$$$$$   /$$$$$$ 
+      |__  $$__/| $$  | $$| $$_____/      |_____ $$  /$$__  $$ /$$__  $$
+         | $$   | $$  | $$| $$                 /$$/ | $$  \ $$| $$  \ $$
+         | $$   | $$$$$$$$| $$$$$             /$$/  | $$  | $$| $$  | $$
+         | $$   | $$__  $$| $$__/            /$$/   | $$  | $$| $$  | $$
+         | $$   | $$  | $$| $$              /$$/    | $$  | $$| $$  | $$
+         | $$   | $$  | $$| $$$$$$$$       /$$$$$$$$|  $$$$$$/|  $$$$$$/
+         |__/   |__/  |__/|________/      |________/ \______/  \______/ 
+
+Level: level5
+
+Instructions
+═════════════════════════════════════════════════════════════════════════════════
+BIRDS! SO MANY BIRDS! Can you see them? Look around!
+
+level5@the-zoo:~$ ls
+birdcage.txt  birdpoop.png
+
+
+
+Last login: Sat Mar 13 23:47:11 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Evans-Air:~ evanjgillard$ scp
+usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file]
+            [-J destination] [-l limit] [-o ssh_option] [-P port]
+            [-S program] source ... target
+Evans-Air:~ evanjgillard$ scp level5@the-zoo:/home/level5/birdpoop.png /Users/evanjgillard/
+ssh: Could not resolve hostname the-zoo: nodename nor servname provided, or not known
+Evans-Air:~ evanjgillard$ scp -P 3333 level5@the-zoo:/home/level5/birdpoop.png /Users/evanjgillard/
+ssh: Could not resolve hostname the-zoo: nodename nor servname provided, or not known
+Evans-Air:~ evanjgillard$ scp -P 3333 level5@bashzoo.neverlanctf.com:/home/level5/birdpoop.png /Users/evanjgillard/
+###############################################################
+#                   Welcome to my game                        # 
+#         Check out https://neverlanctf.com for info          #
+#               Make sure you read the rules                  #
+#         https://neverlanctf.com/docs/code-of-conduct        #
+###############################################################
+level5@bashzoo.neverlanctf.com's password: 
+birdpoop.png                                                                                                                                                              100%  218KB 230.6KB/s   00:00    
+Evans-Air:~ evanjgillard$ 
+
+image says "pesky-bird"
